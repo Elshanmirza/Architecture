@@ -1,0 +1,139 @@
+:root {
+    --primary-orange: #ffa500;
+    --primary-white: #ffffff;
+    --primary-gray: #828282;
+}
+
+.Navbar {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 320px;
+    right: 0;
+}
+
+.Navbar nav {
+    height: 821px;
+    width: 320px;
+    display: flex;
+}
+
+.Navbar nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-white);
+    height: 821px;
+    width: 200px;
+    position: fixed;
+    padding-right: 100%;
+    margin-right: 100px;
+}
+
+.Navbar nav ul li {
+    display: block;
+    margin: 30px;
+    width: 300px;
+    position: relative;
+    right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar nav ul li a {
+    text-decoration: none;
+    color: var(--primary-gray);
+    font-size: 25px;
+    display: flex;
+}
+
+.Navbar nav ul li a:hover {
+    text-decoration: none;
+    color: var(--primary-orange);
+    font-size: 25px;
+    transition: .3s ease-in-out;
+}
+
+.MobileNavigation {
+    display: flex;
+    flex-direction: column;
+    /* background-color: transparent; */
+}
+
+.NavLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 100%;
+}
+
+.NavLink ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}
+
+.closeMenu {
+    position: fixed;
+    right: 270px;
+    top: 40px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.iconDiv {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.faIcon {
+    background-color: var(--primary-gray);
+    border-radius: 50%;
+    border: 5px solid var(--primary-gray);
+    margin-right: 40px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.faIcon:hover {
+    background-color: var(--primary-orange);
+    border: 5px solid var(--primary-orange);
+    transition: .3s ease-in-out;
+}
+
+/* @media (max-width: 990px) {
+    .Navbar .Navigation {
+        display: none;
+    }
+
+    .Navbar .MobileNavigation {
+        display: flex;
+        background: red;
+    }
+} */
+
+/* @media(max-width: 576px) {
+    .Navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MobileNavigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
